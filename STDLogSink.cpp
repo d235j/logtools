@@ -24,11 +24,7 @@
  **********************************************************************************************************************/
 
 #include "log.h"
-#include <cstdio>
-#include <cstdarg>
-#include <string>
-#include <sstream>
-#include <limits.h>
+
 #ifdef _WIN32
 #define NOMINMAX
 #define WIN32_LEAN_AND_MEAN
@@ -37,6 +33,12 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 #endif
+
+#include <cstdio>
+#include <cstdarg>
+#include <string>
+#include <sstream>
+#include <limits.h>
 
 using namespace std;
 

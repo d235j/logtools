@@ -32,7 +32,11 @@
 #include <set>
 #include <mutex>
 
-#if defined(__MINGW32__)
+#if defined(_MSC_VER)
+#define __thread __declspec(thread)
+#endif
+
+#if defined(__MINGW32__) || defined(_MSC_VER)
 #undef ERROR
 #endif
 
